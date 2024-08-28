@@ -24,7 +24,7 @@ if st.button("Predict"):
     
     if response.status_code == 200:
         prediction = response.json().get("pred")
-        st.write(f"The predicted price is: {prediction}")
+        st.write(f"The predicted cluster is: {prediction}")
     else:
         st.write("Error: Could not get prediction from the API")
 
